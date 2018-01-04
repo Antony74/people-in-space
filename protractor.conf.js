@@ -23,6 +23,7 @@ exports.config = {
     require('ts-node').register({
       project: 'e2e/tsconfig.e2e.json'
     });
+    require("zone.js/dist/zone-node");
     jasmine.getEnv().addReporter(new SpecReporter({ spec: { displayStacktrace: true } }));
   }
 };
